@@ -1,5 +1,9 @@
 ### Multiview NMF (MVNMF) in C++
 
+[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
+
+This implementation of Multiview NMF is part of the NE-MVNMF framework applied to high-throughput chromosome conformation capture (Hi-C) data in order to indentify regions involved in dynamic 3D genome organization during development. Now published in Frontiers in Genetics: https://doi.org/10.3389/fgene.2021.788318
+
 ### [Step 1] Install 
 
 Installation instructions below were tested in Linux Centos 7 distribution. [GSL (GNU Scientific Library) 2.6](https://www.gnu.org/software/gsl/doc/html/index.html) is used to handle matrix- and vector-related operations. For matrix inversion, one of the newer functions in GSL 2.6 is used, so the code may not run if you have an older GSL.
