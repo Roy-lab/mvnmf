@@ -4,6 +4,10 @@
 
 This implementation of Multiview NMF is part of the NE-MVNMF framework applied to high-throughput chromosome conformation capture (Hi-C) data in order to indentify regions involved in dynamic 3D genome organization during development. Now published in Frontiers in Genetics: https://doi.org/10.3389/fgene.2021.788318
 
+![](NE-MVNMF.png)
+
+In the the NE-MVNMF framework, network enhancement (NE) first smooths out the input Hi-C matrices representing diffrent biological contexts or conditions. Then MVNMF is applied to jointly factor the matrices. By clustering the factor matrices, regions that are switching cluster assignments across conditions. These contiguous blocks of such regions represent domain-level changes which we call “dynamic blocks.” On the dynamic blocks, we do downstream analysis, such as check for association with differential chormatin interactions or differentially expressed genes.
+
 ### [Step 1] Install 
 
 Installation instructions below were tested in Linux Centos 7 distribution. [GSL (GNU Scientific Library) 2.6](https://www.gnu.org/software/gsl/doc/html/index.html) is used to handle matrix- and vector-related operations. For matrix inversion, one of the newer functions in GSL 2.6 is used, so the code may not run if you have an older GSL.
